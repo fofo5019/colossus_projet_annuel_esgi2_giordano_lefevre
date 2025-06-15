@@ -21,7 +21,6 @@
   - [Clone et dépendances](#clone-et-dépendances)
   - [Lancement](#lancement)
 - [📜 Scripts disponibles](#scripts-disponibles)
-- [🛠️ Contribution](#contribution)
 - [📝 Licence](#licence)
 - [✍️ Auteurs](#auteurs)
 
