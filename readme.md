@@ -20,8 +20,6 @@
   - [Prérequis](#prérequis)
   - [Clone et dépendances](#clone-et-dépendances)
   - [Lancement](#lancement)
-- [📜 Scripts disponibles](#scripts-disponibles)
-- [📝 Licence](#licence)
 - [✍️ Auteurs](#auteurs)
 
 ## 📖 Introduction
