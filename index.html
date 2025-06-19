@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Colossus - La tablette 24 pouces conçue pour l'accessibilité et l'inclusion numérique">
+    <title>Colossus | La tablette 24" pour tous</title>
+    <link rel="icon" type="image/svg+xml" href="/colossus-icon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand" onclick="scrollToSection('hero')">
+                <img src="/colossus-icon.svg" alt="Logo Colossus" class="nav-logo">
+                <span class="nav-title">Colossus</span>
+            </div>
+            
+            <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu mobile">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" onclick="scrollToSection('hero')">Accueil</a></li>
+                <li><a href="#features" onclick="scrollToSection('features')">Caractéristiques</a></li>
+                <li><a href="#accessibility" onclick="scrollToSection('accessibility')">Accessibilité</a></li>
+                <li><a href="#our-story" onclick="scrollToSection('our-story')">Notre Histoire</a></li>
+                <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section Présentation -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Colossus
+                            <span class="hero-subtitle">La tablette 24 pouces pour tous</span>
+                        </h1>
+                        <p class="hero-description">
+                            Découvrez la grandeur d'une tablette adaptative qui rend le numérique accessible à chacun, 
+                            quels que soient ses besoins.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary" onclick="scrollToSection('our-story')">Découvrir</button>
+                            <button class="btn btn-outline" onclick="scrollToSection('features')">En savoir plus</button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="hero-card">
+                            <img src="/images/exemple.png" alt="Tablette Colossus 24 pouces">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="scroll-down" onclick="scrollToSection('features')" aria-label="Défiler vers le bas">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+            </button>
+        </section>
+
+        <!-- Section Fonctionnalités -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Caractéristiques</h2>
+                    <p>Une tablette pensée dans les moindres détails pour offrir une expérience accessible et intuitive.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+                            </svg>
+                        </div>
+                        <h3>Taille XXL</h3>
+                        <p>Écran 24 pouces offrant une surface d'interaction maximale pour faciliter la navigation.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="12" rx="1"/>
+                                <path d="M8 21h8"/>
+                                <path d="M12 17v4"/>
+                            </svg>
+                        </div>
+                        <h3>Écran tactile</h3>
+                        <p>Technologie tactile haute précision avec sensibilité ajustable selon les besoins.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="21" y1="4" x2="14" y2="4"/>
+                                <line x1="10" y1="4" x2="3" y2="4"/>
+                                <line x1="21" y1="12" x2="12" y2="12"/>
+                                <line x1="8" y1="12" x2="3" y2="12"/>
+                                <line x1="21" y1="20" x2="16" y2="20"/>
+                                <line x1="12" y1="20" x2="3" y2="20"/>
+                                <line x1="14" y1="2" x2="14" y2="6"/>
+                                <line x1="8" y1="10" x2="8" y2="14"/>
+                                <line x1="16" y1="18" x2="16" y2="22"/>
+                            </svg>
+                        </div>
+                        <h3>Interface personnalisable</h3>
+                        <p>Personnalisation complète : taille des polices, contrastes, agencement des éléments.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </div>
+                        <h3>Connectivité avancée</h3>
+                        <p>Wi-Fi 6, Bluetooth 5.2 et ports USB-C pour une connectivité sans faille.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="1" y="6" width="18" height="10" rx="2"/>
+                                <line x1="22" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </div>
+                        <h3>Autonomie longue durée</h3>
+                        <p>Batterie haute capacité offrant jusqu'à 10 heures d'utilisation continue.</p>
+                    </div>
+                </div>
+
+                <div class="features-highlight">
+                    <h3>Pourquoi ces caractéristiques ?</h3>
+                    <p>
+                        Chaque fonctionnalité a été pensée pour répondre aux besoins réels des utilisateurs. 
+                        Un écran plus grand pour ceux qui ont des difficultés visuelles, une interface personnalisable 
+                        pour s'adapter à chaque situation, une autonomie longue pour ne jamais être pris au dépourvu.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Accessibilité -->
+        <section id="accessibility" class="accessibility">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Accessibilité sans compromis</h2>
+                    <p>Chaque détail de Colossus a été conçu pour garantir une expérience numérique inclusive et accessible à tous.</p>
+                </div>
+
+                <div class="accessibility-content">
+                    <div class="accessibility-features">
+                        <div class="accessibility-item">
+                            <div class="accessibility-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                                    <line x1="12" y1="19" x2="12" y2="23"/>
+                                    <line x1="8" y1="23" x2="16" y2="23"/>
+                                </svg>
+                            </div>
+                            <div class="accessibility-text">
+                                <h3>Commandes vocales avancées</h3>
+                                <p>Contrôlez l'ensemble des fonctionnalités grâce à une reconnaissance vocale précise, même en environnement bruyant.</p>
+                            </div>
+                        </div>
+
+                        <div class="accessibility-item">
+                            <div class="accessibility-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 11V6a6 6 0 0 0-12 0v5"/>
+                                    <path d="M2 13a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6z"/>
+                                </svg>
+                            </div>
+                            <div class="accessibility-text">
+                                <h3>Retour haptique personnalisable</h3>
+                                <p>Vibrations et retours tactiles ajustables offrant un feedback sensoriel pour faciliter la navigation.</p>
+                            </div>
+                        </div>
+
+                        <div class="accessibility-item">
+                            <div class="accessibility-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="6" y1="4" x2="10" y2="4"/>
+                                    <line x1="6" y1="8" x2="10" y2="8"/>
+                                    <line x1="6" y1="12" x2="10" y2="12"/>
+                                    <line x1="6" y1="16" x2="10" y2="16"/>
+                                    <line x1="6" y1="20" x2="10" y2="20"/>
+                                    <path d="M14 7h7"/>
+                                    <path d="M15 12h6"/>
+                                    <path d="M14 17h7"/>
+                                </svg>
+                            </div>
+                            <div class="accessibility-text">
+                                <h3>Boutons physiques adaptables</h3>
+                                <p>Accessoires magnétiques permettant d'ajouter des boutons physiques de différentes tailles et sensibilités.</p>
+                            </div>
+                        </div>
+
+                        <div class="accessibility-item">
+                            <div class="accessibility-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="accessibility-text">
+                                <h3>Optimisation pour lecteurs d'écran</h3>
+                                <p>Compatible avec tous les logiciels d'assistance, avec descriptions détaillées des éléments visuels.</p>
+                            </div>
+                        </div>
+
+                        <div class="accessibility-item">
+                            <div class="accessibility-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="11 5,6 9,2 9,2 15,6 15,11 19,11 5"/>
+                                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+                                </svg>
+                            </div>
+                            <div class="accessibility-text">
+                                <h3>Système audio intelligent</h3>
+                                <p>Haut-parleurs directionnels et amplification ciblée des fréquences vocales pour une meilleure intelligibilité.</p>
+                            </div>
+                        </div>
+
+                        <div class="accessibility-item">
+                            <div class="accessibility-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/>
+                                    <path d="M14.5 6A2.5 2.5 0 0 1 17 8.5c0 1.11-.35 2.13-.94 2.97"/>
+                                    <path d="M22 9c0 1.66-.67 3.17-1.76 4.24"/>
+                                </svg>
+                            </div>
+                            <div class="accessibility-text">
+                                <h3>Interface adaptative</h3>
+                                <p>L'IA analyse vos interactions et adapte progressivement l'interface à vos besoins spécifiques.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accessibility-video">
+                        <video controls poster="/images/exemple.png">
+                            <source src="/videos/demo.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Notre Histoire -->
+        <section id="our-story" class="our-story">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Notre Histoire</h2>
+                    <p>Une aventure humaine et technique qui nous a menés de l'échec à l'opportunité</p>
+                </div>
+
+                <div class="story-intro">
+                    <p>
+                        À l'origine, notre projet annuel à l'ESGI visait à concevoir une tablette tactile de 24 pouces 
+                        dédiée à l'accessibilité numérique et le tout avec des pièces d'occasions. L'idée était ambitieuse : créer un appareil pensé pour les 
+                        personnes ayant des besoins spécifiques, en mettant la technologie au service de l'inclusion.
+                    </p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 12l2 2 4-4"/>
+                                    <path d="M21 12c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1"/>
+                                    <path d="M15.5 7.5c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1"/>
+                                    <path d="M8.5 16.5c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1"/>
+                                </svg>
+                                <h3>L'Idée ambitieuse</h3>
+                            </div>
+                            <p>
+                                Concevoir une tablette tactile de 24 pouces révolutionnaire, entièrement dédiée à 
+                                l'accessibilité numérique pour les personnes ayant des besoins spécifiques.
+                            </p>
+                            <div class="timeline-image">
+                                <img src="/images/croquis.png" alt="Première esquisse du projet Colossus">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker timeline-marker-red"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                                </svg>
+                                <h3>Les défis techniques</h3>
+                            </div>
+                            <p>
+                                Des problèmes de soudure et de compatibilité matérielle ont sérieusement freiné notre 
+                                progression. Malgré tous nos efforts et les nombreuses pièces récupérées, nous avons dû 
+                                prendre une décision difficile : abandonner la fabrication physique.
+                            </p>
+                            <div class="timeline-images">
+                                <div class="timeline-image">
+                                    <img src="/images/ecran.jpg" alt="Composants électroniques du projet">
+                                    <span>La dalle tactile</span>
+                                </div>
+                                <div class="timeline-image">
+                                    <img src="/images/carte_mere.jpg" alt="Tentatives de soudure">
+                                    <span>Les cartes mères</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker timeline-marker-green"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                                    <line x1="9" y1="9" x2="9.01" y2="9"/>
+                                    <line x1="15" y1="9" x2="15.01" y2="9"/>
+                                </svg>
+                                <h3>La transformation</h3>
+                            </div>
+                            <p>
+                                Après avoir récupéré du matériel auprès de <strong>l'hôpital d'Aix-en-Provence</strong>, de l'entreprise <strong>Materiel.net</strong> et de quelques particuliers bienveillants rencontrés sur <strong>Le Bon Coin</strong>, nous avons tenté de donner vie à notre tablette.
+                                <br><br>
+                                Plutôt que de baisser les bras, nous avons choisi de transformer cet échec en opportunité.
+                                <br><br>
+                                Franck Giordano et Matys Lefevre ont décidé de concevoir ce site web, témoignage de notre parcours et de notre volonté de rebondir.
+                            </p>
+                            <div class="timeline-image">
+                                <img src="/images/echec.png" alt="Franck et Matys travaillant sur le site">
+                                <span>La révélation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker timeline-marker-purple"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                                <h3>Une vision d'avenir</h3>
+                            </div>
+                            <p>
+                                Ce site est devenu une plateforme de crowdfunding pour continuer à croire en cette vision, 
+                                avec l'aide d'une communauté qui partage nos valeurs d'accessibilité et d'inclusion.
+                            </p>
+                            <div class="timeline-image">
+                                <img src="/images/reussite.png" alt="Vision future du projet Colossus">
+                                <span>Notre vision pour l'avenir de Colossus</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-conclusion">
+                    <h3>Plus qu'un projet, une aventure humaine</h3>
+                    <p>
+                        Cette aventure, bien plus humaine que technique, nous a appris la résilience, l'importance du 
+                        travail en équipe, et la capacité à s'adapter. Aujourd'hui, ce site est bien plus qu'une vitrine : 
+                        c'est le point de départ d'un projet que nous espérons voir renaître, cette fois, avec le soutien 
+                        de toutes celles et ceux qui croient en une technologie plus accessible.
+                    </p>
+                    
+                    <div class="story-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('contact')">Soutenir le projet</button>
+                        <a href="mailto:contact@colossus.fr" class="btn btn-outline">Nous contacter</a>
+                    </div>
+
+                    <div class="story-authors">
+                        <p><strong>Franck Giordano & Matys Lefevre</strong></p>
+                        <p>Étudiants ESGI 2 - Porteurs du projet Colossus</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-header">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <h2>Contactez-nous</h2>
+                    </div>
+                    
+                    <p class="contact-description">
+                        Une question ? Une idée ? Envie de soutenir le projet ? 
+                        N'hésitez pas à nous écrire, on répond toujours !
+                    </p>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Votre nom</label>
+                                <input type="text" id="name" name="name" required placeholder="Comment vous appelez-vous ?">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Votre email</label>
+                                <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Votre message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Racontez-nous tout ! Vos idées, vos questions, vos encouragements..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+                    </form>
+
+                    <div class="contact-success" id="contactSuccess" style="display: none;">
+                        <div class="success-content">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                            <h3>Merci !</h3>
+                            <p>Votre message nous fait chaud au cœur. Nous reviendrons vers vous très vite !</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <p>
+                            Vous pouvez aussi nous écrire directement à 
+                            <a href="mailto:contact@colossus.fr">contact@colossus.fr</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="/colossus-icon.svg" alt="Logo Colossus" class="footer-logo">
+                        <span class="footer-title">Colossus</span>
+                    </div>
+                    <p class="footer-description">
+                        Redéfinir l'accessibilité numérique avec une tablette géante de 24 pouces, 
+                        conçue pour garantir une expérience inclusive et sans barrières.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="#hero" onclick="scrollToSection('hero')">Accueil</a></li>
+                        <li><a href="#features" onclick="scrollToSection('features')">Caractéristiques</a></li>
+                        <li><a href="#accessibility" onclick="scrollToSection('accessibility')">Accessibilité</a></li>
+                        <li><a href="#our-story" onclick="scrollToSection('our-story')">Notre Histoire</a></li>
+                        <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><a href="mailto:contact@colossus.fr">contact@colossus.fr</a></p>
+                    <p>
+                        Franck Giordano & Matys Lefevre<br>
+                        <small>Étudiants ESGI 2</small>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-heart">
+                    <p>Fait avec le</p>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                    </svg>
+                    <p>pour l'accessibilité numérique</p>
+                </div>
+                <p class="footer-copyright">
+                    &copy; 2025 Projet Colossus - Un projet présenté par Franck Giordano et Matys Lefevre ESGI 2
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
