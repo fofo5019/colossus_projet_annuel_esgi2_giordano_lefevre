@@ -4,8 +4,11 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "python -m http.server 8000",
+    "dev": "npx serve . -p 8000",
     "build": "echo 'No build needed for vanilla HTML'",
-    "preview": "python -m http.server 8000"
+    "preview": "npx serve . -p 8000"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
   }
 }

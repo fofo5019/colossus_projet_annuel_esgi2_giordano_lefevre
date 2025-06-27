@@ -16,7 +16,7 @@
 
 ## 📖 Introduction
 
-Colossus est un projet annuel de l’ESGI.  
+Colossus est un projet annuel de l'ESGI.  
 Initialement pensé comme une **tablette accessible à construire soi-même**, le projet a évolué vers une version plus simple et concrète : un **site vitrine** qui retrace notre démarche, nos essais et nos résultats.
 
 ---
@@ -38,8 +38,11 @@ Ouvrir simplement le fichier `index.html` dans votre navigateur.
 ### Localhost
 
 ```bash
-# Optionnel – Démarrer un petit serveur local
-python -m http.server
+# Installer les dépendances
+npm install
+
+# Démarrer le serveur de développement
+npm run dev
 
 # Ensuite ouvrir http://localhost:8000
 ```
